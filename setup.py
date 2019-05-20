@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README.rst', encoding='UTF-8') as f:
+with open('README.rst', 'r') as f:
     readme = f.read()
 
 setup(
@@ -8,6 +8,7 @@ setup(
     version='1.0.0',
     description='Command line user export utility',
     long_description=readme,
+    long_description_content_type='text/markdown',
     author='Davis Damian',
     author_emai='ddamian.sbp@gmail.com',
     packages=find_packages('src'),
