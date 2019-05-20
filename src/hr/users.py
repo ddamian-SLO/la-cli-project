@@ -1,9 +1,9 @@
 import pwd
 
 def get_users():
-    valid_users = [0]
+    valid_users = []
     total_users = pwd.getpwall()
-    for i in range(len(total_users), -1, -1):
+    for i in range(len(total_users) -1, -1, -1):
         if total_users[i].pw_uid < 1000:
             break
         else:
